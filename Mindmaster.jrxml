@@ -1,0 +1,59 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a135bbab-151b-4fbf-a858-27961a77db3d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (3)"/>
+	<query language="SQL"><![CDATA[SELECT * FROM payment]]></query>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="month" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="month"/>
+		<property name="com.jaspersoft.studio.field.label" value="month"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="amount" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="33ce4fd1-9ea6-48e8-9bc7-13aa6d9b5cbc" x="135" y="0" width="285" height="45" fontSize="30.0">
+			<text><![CDATA[PAYMENT DETAILS]]></text>
+		</element>
+		<element kind="staticText" uuid="64f0d063-2dcd-4b66-9916-d56246d1f944" x="161" y="40" width="233" height="30" fontSize="20.0">
+			<text><![CDATA[OF MINDMASTER CLUB]]></text>
+		</element>
+	</title>
+	<pageHeader height="48" splitType="Stretch"/>
+	<columnHeader height="48" splitType="Stretch">
+		<element kind="staticText" uuid="13a9d3ed-26f2-4c2d-a5d2-4f0428ce97bc" x="140" y="7" width="30" height="30" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[ID]]></text>
+		</element>
+		<element kind="staticText" uuid="5d3d1ffa-403c-4d24-bc5b-839ed7982eca" x="240" y="7" width="60" height="30" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Month]]></text>
+		</element>
+		<element kind="staticText" uuid="091fd7b2-f95c-4b56-a8a5-bc141210b10b" x="360" y="7" width="60" height="30" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Amount]]></text>
+		</element>
+		<element kind="line" uuid="fa8d98eb-a7fc-4b92-9921-d912a03d0387" x="87" y="44" width="393" height="1"/>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<element kind="textField" uuid="a0cb7949-b4e3-4713-b9e9-01c8881dab0f" x="140" y="2" width="30" height="30" fontSize="13.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="5063149f-ff71-4c49-95c4-61eef6922e8d" x="240" y="2" width="60" height="30" fontSize="13.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{month}]]></expression>
+			</element>
+			<element kind="textField" uuid="6bd9e42c-5f8a-4f9a-bf5f-cdd172352de5" x="360" y="2" width="60" height="30" fontSize="13.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{amount}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
